@@ -1,6 +1,6 @@
 # not-a-good-ssh-docker
 
-Simple tunnel ssh script build for a docker, it's not good and safe. You will be able to tunnel an another docker[SOURCE] to the web (with a proxy server[TARGET]). It 's like ngrok but cheap without a great security (password usage).
+Simple tunnel ssh script build for a docker. You will be able to tunnel an another docker[SOURCE] to the web (with a proxy server[TARGET]). It 's like ngrok but cheap without a great security (password usage, see https://serverfault.com/questions/334448/why-is-ssh-password-authentication-a-security-risk).
 
 Exemple where "web" is the docker service I want to share on web.
 

@@ -1,6 +1,6 @@
 # not-a-good-ssh-docker
 
-Simple tunnel ssh script build for an docker, not good and safe.
+Simple tunnel ssh script build for a docker, it's not good and safe.
 
 ```dockercompose
   tunnel:

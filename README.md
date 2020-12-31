@@ -1,7 +1,8 @@
 # not-a-good-ssh-docker
 
-Simple tunnel ssh script build for a docker, it's not good and safe. You will be able to tunnel an another docker to the web (with a proxy server). It 's like ngrok but cheap without a great security (password usage).
+Simple tunnel ssh script build for a docker, it's not good and safe. You will be able to tunnel an another docker[SOURCE] to the web (with a proxy server[TARGET]). It 's like ngrok but cheap without a great security (password usage).
 
+Exemple where "web" is the docker service I want to share on web.
 
 ```dockercompose
   tunnel:
@@ -17,9 +18,12 @@ Simple tunnel ssh script build for a docker, it's not good and safe. You will be
       - web
     links:
       - web:web
+  web:
+    image:.....
+    
 ```
 
-NGINX Example file
+[TARGET] NGINX Example file
 
 Use this tutorial for setup the proxy server https://blog.seriesci.com/unlimited-tunnels-to-localhost-for-little-money/
 
@@ -38,3 +42,4 @@ But for the location, add these parameter (proxy_*):
                 proxy_redirect off;
         }
 ```
+I use lunanode.com(cheap) as virtual machine for the proxy server[TARGET] for my personnal use.

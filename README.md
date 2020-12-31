@@ -42,4 +42,7 @@ But for the location, add these parameter (proxy_*):
                 proxy_redirect off;
         }
 ```
+
+Note if you  tunel a HTTPS port, like Nextcloud, change the "proxy_pass http://localhost:PORT;" for "proxy_pass https://localhost:PORT;".
+
 I use lunanode.com(cheap) as virtual machine for the proxy server[TARGET] for my personnal use.

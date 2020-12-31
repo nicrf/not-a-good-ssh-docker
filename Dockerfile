@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add openssh-client bash && add sshpass
+RUN apk update && apk add openssh-client bash sshpass
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["ssh"]

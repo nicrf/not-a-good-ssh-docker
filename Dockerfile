@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV FR_DB_HOST=db \
+ENV TARGET_HOST=url.com \
     TARGET_PASSWORD=PASSWORD \
     TARGET_PORT=8080 \
     TARGET_USER=root \

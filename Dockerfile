@@ -5,7 +5,8 @@ ENV TARGET_HOST=url.com \
     TARGET_PORT=8080 \
     TARGET_USER=root \
     SOURCE_HOST=localhost \
-    SOURCE_PORT=80
+    SOURCE_PORT=80 \
+    KEEP_ALIVE_TIME=20000
 
 COPY entrypoint.sh /
 
